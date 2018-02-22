@@ -4,9 +4,9 @@
 
 ---
 
-With this Jenkins plugin, You can publish test results to DevOps Insights, add automated quality gates, and track your deployment risk.  You can also send your Jenkins job notifications to other tools in your toolchain, such as Slack and PagerDuty. To help you figure out when code was deployed, the system can add deployment messages to your Git commits and your related Git or JIRA issues. You can also view your deployments on the Toolchain Connections page.
+With this Jenkins plugin, You can publish test results to DevOps Insights, add automated quality gates, and track your deployment risk.  You can also send your Jenkins job notifications to other tools in your toolchains, such as Slack and PagerDuty. To help you figure out when a code was deployed, the system can add deployment messages to your Git commits and your related Git or JIRA issues. You can also view your deployments on the Toolchain Connections page.
 
-This plugin provides Post-Build Actions and CLIs to support this inteigration. DevOps Insights aggregates and analyzes the results from unit tests, functional tests, code-coverage tools, static security code scans and dynamic security code scans to determine whether your code meets predefined policies at gates in your deployment process. If your code does not meet or exceed a policy, the deployment is halted, preventing risky changes from being released. You can use DevOps Insights as a safety net for your continuous delivery environment, a way to implement and improve quality standards over time, and a data visualization tool to help you understand your project's health.
+This plugin provides Post-Build Actions and CLIs to support this integration. DevOps Insights aggregates and analyzes the results from unit tests, functional tests, code-coverage tools, static security code scans and dynamic security code scans to determine whether your code meets predefined policies at gates in your deployment process. If your code does not meet or exceed a policy, the deployment is halted, preventing risky changes from being released. You can use DevOps Insights as a safety net for your continuous delivery environment, a way to implement and improve quality standards over time, and a data visualization tool to help you understand your project's health.
 
 ## 1. Create a toolchain
 
@@ -41,7 +41,7 @@ After the plugin is installed, you can integrate DevOps Insights into your Jenki
 
    * In the **Build Job Name** field, specify your build job's name exactly as it is in Jenkins. If the build occurs with the test job, leave this field empty. If the build job occurs outside of Jenkins, select the **Builds are being done outside of Jenkins** check box and specify the build number and build URL.
 
-   * For the environment, if the tests are running in build stage, select only the build environment. If the tests are running in the deployment stage, select the deploy environment and specify the environment name. Two values are supported: `STAGING` and `PRODUCTION`.
+   * For the environment, if the tests are running in build stage, select only the build environment. If the tests are running in the deployment stage, select the deployed environment and specify the environment name. Two values are supported: `STAGING` and `PRODUCTION`.
 
    * For the **Result File Location** field, specify the result file's location. If the test doesn't generate a result file, leave this field empty. The plugin uploads a default result file that is based on the status of current test job.
 
